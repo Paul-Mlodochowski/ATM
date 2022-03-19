@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.login">
+   <children>
+      <VBox layoutX="203.0" layoutY="154.0" prefHeight="200.0" prefWidth="294.0">
+         <children>
+            <TextField fx:id="nr_karty" prefHeight="25.0" prefWidth="223.0" />
+            <PasswordField fx:id="PIN">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </PasswordField>
+         </children>
+      </VBox>
+      <TextField editable="false" layoutX="306.0" layoutY="123.0" prefHeight="31.0" prefWidth="107.0" style="-fx-background-color: white;" text="Numer Karty">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <TextField editable="false" layoutX="332.0" layoutY="243.0" prefHeight="31.0" prefWidth="53.0" style="-fx-background-color: white;" text="PIN">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Button layoutX="301.0" layoutY="335.0" mnemonicParsing="false" onAction="#zatwierdz" style="-fx-background-color: lightgrey;" text="Zatwierdź">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

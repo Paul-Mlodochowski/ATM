@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane prefHeight="474.0" prefWidth="700.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.stan_konta">
+   <children>
+      <TextField editable="false" layoutX="15.0" layoutY="77.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white;" text="Dostępne środki:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="user_money" editable="false" layoutX="206.0" layoutY="78.0" prefHeight="48.0" prefWidth="144.0" promptText="user_money" style="-fx-background-color: white;">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="330.0" layoutY="130.0" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: white;" text="Wypłać">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <VBox layoutX="115.0" layoutY="169.0" prefHeight="257.0" prefWidth="501.0">
+         <children>
+            <Button fx:id="button_one" mnemonicParsing="false" onMouseClicked="#clicked" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" text="100$">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#clicked" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #C7C7C7;" text="200$">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#clicked" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: lightgrey;" text="500$">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#clicked" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #C7C7C7;" text="1000$">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <TextField fx:id="wyplac_user_choice" onKeyTyped="#checkin" prefHeight="63.0" prefWidth="501.0" promptText="Podaj własną kwotę">
+               <font>
+                  <Font size="15.0" />
+               </font></TextField>
+         </children>
+      </VBox>
+      <Button layoutX="534.0" layoutY="27.0" mnemonicParsing="false" onAction="#Wyloguj" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="37.0" prefWidth="144.0" style="-fx-background-color: lightgrey; -fx-text-alignment: center;" text="Wyloguj ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="personal_data" layoutX="22.0" layoutY="27.0" prefHeight="17.0" prefWidth="256.0">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="534.0" layoutY="78.0" mnemonicParsing="false" onAction="#przelew" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="37.0" prefWidth="144.0" style="-fx-background-color: lightgrey;" text="Zrób przelew">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="zatwierdz" layoutX="287.0" layoutY="426.0" mnemonicParsing="false" onAction="#zatwierdz_action" onMouseEntered="#Entered" onMouseExited="#Exited" opacity="0.0" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: lightgrey;" text="Zatwierdź">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="287.0" layoutY="23.0" mnemonicParsing="false" onAction="#Izrael" onMouseEntered="#Entered" onMouseExited="#Exited" prefHeight="47.0" prefWidth="159.0" style="-fx-background-color: lightgrey; -fx-border-color: darkblue;" text="Weź kredyt">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
